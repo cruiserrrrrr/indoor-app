@@ -1,0 +1,65 @@
+.rightbar_wrapper {
+    max-width: 24%;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 10px;
+    justify-content: center;
+    flex-direction: column;
+    width: 10px !important;
+    gap: 34px;
+    opacity: 0;
+    transition: .4s;
+    pointer-events: none;
+    z-index: 1001;
+
+    .rightbar-content{
+        position: absolute;
+        padding: 20px 35px 35px 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 320px;
+        max-height: 450px !important;
+        border-radius: 20px;
+        background: var(--item-dark);
+
+        .close-btn__barr {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            padding: 10px 10px;
+            border-radius: 10px;
+            background: #FF158B;
+            position: absolute;
+            left: -10px;
+            bottom: 41.5%;
+            cursor: pointer;
+            transform: .4s;
+
+            .close-btnn {
+                background: transparent;
+                padding: 7px 7px;
+                border-left: none;
+                border-bottom: none;
+                border-right: 2px solid #FFFFFF;
+                border-top: 2px solid #FFFFFF;
+                transform: rotate(45deg);
+                cursor: pointer;
+                transform: .4s;
+
+            }
+        }
+    }    
+}
+
+.rightbar_wrapper.active{
+    top: 0%;
+    right: -10px;
+    opacity: 1;
+    pointer-events: all;
+    min-width: 330px;
+}

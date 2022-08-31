@@ -1,0 +1,102 @@
+:root {
+
+    // dark
+    --btn-dark-hover: #1F1F1F;
+    --background-dark: #202020;
+    --back-item-color: #2E2E2E;
+    --item-dark: #323232;
+    --color-text: #FFFFFF;
+    // light
+
+}
+
+.sidebar-container {
+    max-width: 196px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 27px 20px 40px 20px;
+    flex-direction: column;
+    background: var(--back-item-color);
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+
+    .sidebar-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 34px;
+            line-height: 43px;
+            color: #FF158B;
+            text-decoration: none;
+
+            .logo__rotate {
+                writing-mode: horizontal-tb;
+            }
+        }
+    }
+
+    .sidebar-menu {
+        margin-top: 90px;
+
+        .nav-bar {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .nav__item {
+                max-width: 156px;
+                display: flex;
+                align-items: center;
+                color: var(--color-text);
+                background: none;
+                border: none;
+                cursor: pointer;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 23px;
+                letter-spacing: 0.02em;
+                padding: 11px 22px 10px 20px;
+                gap: 10px;
+                transition: .25s;
+                fill: var(--color-text);
+                border-radius: 10px;
+            }
+
+            .nav__item:hover {
+                background: var(--btn-dark-hover);
+                border-radius: 10px;
+                fill: #FF158B;
+            }
+
+        }
+    }
+
+    .sidebar-profile {
+        width: 100%;
+        margin-top: auto;
+    }
+}
+
+
+
+
+
+@media (max-width: 1101px) {
+
+    .sidebar-container{
+        display: none;
+
+    }
+
+
+}

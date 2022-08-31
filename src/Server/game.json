@@ -1,0 +1,36 @@
+[
+    // http://myjson.dit.upm.es/api/bins/j5l2
+    {
+        "name": "Dota 2",
+        "users": "250k",
+        "status": "Popular",
+        "img": "https://github.com/cruiserrrrrr/img/blob/cruiserrrrrr/indoor/dota2.jpg?raw=true",
+        "star": "⭐⭐⭐⭐⭐"
+    },
+    {
+        "name": "GTA 5",
+        "users": "47.7k",
+        "status": "Popular",
+        "img": "https://github.com/cruiserrrrrr/img/blob/cruiserrrrrr/indoor/gta5.png?raw=true",
+        "star": "⭐⭐⭐⭐"
+    },{
+        "name": "Minecraft",
+        "users": "250k",
+        "status": "Challange",
+        "img": "https://github.com/cruiserrrrrr/img/blob/cruiserrrrrr/indoor/minecraft.png?raw=true",
+        "star": "⭐⭐⭐⭐⭐"
+    },{
+        "name": "Sea of Thieves",
+        "users": "250k",
+        "status": "New",
+        "img": "https://github.com/cruiserrrrrr/img/blob/cruiserrrrrr/indoor/sot.jpg?raw=true",
+        "star": "⭐⭐⭐"
+    },
+    {
+        "name": "Mortal Kombat",
+        "users": "25.1k",
+        "status": "Challange",
+        "img": "https://github.com/cruiserrrrrr/img/blob/cruiserrrrrr/indoor/image.png?raw=true",
+        "star": "⭐⭐⭐⭐"
+    }
+]

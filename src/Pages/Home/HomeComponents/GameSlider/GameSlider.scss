@@ -1,0 +1,35 @@
+:root{
+
+    // dark
+    --btn-dark-hover: #1F1F1F;
+    --background-dark:  #202020;
+    --back-item-color: #2E2E2E;
+    --item-dark: #323232;
+    --color-text: #FFFFFF;
+    // light
+    --btn-light-hover: #fafafa;
+    --background-light:  #e4e4e4;
+    --back-item-color-light: #a0a0a0;
+    --item-light: #979797;
+    --color-light: #1F1F1F;
+}
+
+.InfiniteCarouselFrame{
+    min-height: 244px;
+    max-width: 100%;
+    overflow: visible ;
+    .InfiniteCarouselSlide{
+        max-width: 244px;
+    }
+}
+
+@media (max-width: 970px) {
+    .InfiniteCarouselFrame{
+        max-height: 188px;
+        max-width: 100%;
+        overflow: visible ;
+        .InfiniteCarouselSlide{
+            max-width: 244px;
+        }
+    }
+}

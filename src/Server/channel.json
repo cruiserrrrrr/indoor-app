@@ -1,0 +1,28 @@
+[
+    // http://myjson.dit.upm.es/api/bins/3cwu
+    {
+        "name": "Louis Vuitton",
+        "img": "https://github.com/cruiserrrrrr/img/blob/cruiserrrrrr/groop/lv.png?raw=true",
+        "followers": "471.6k",
+        "rating": "4.6"
+
+    },
+    {
+        "name": "Robert Fox",
+        "img": "https://github.com/cruiserrrrrr/img/blob/cruiserrrrrr/groop/robf.png?raw=true",
+        "followers": "370k",
+        "rating": "3.8"
+    },
+    {
+        "name": "McDonald's",
+        "img": "https://github.com/cruiserrrrrr/img/blob/cruiserrrrrr/groop/mc.png?raw=true",
+        "followers": "212.7k",
+        "rating": "4.7"
+    },
+    {
+        "name": "Apple",
+        "img": "https://github.com/cruiserrrrrr/img/blob/cruiserrrrrr/groop/apple.png?raw=true",
+        "followers": "874.2k",
+        "rating": "4.9"
+    }
+]

@@ -1,0 +1,404 @@
+*,
+::after,
+::before{
+    padding: 0 0;
+    margin: 0 0;
+    box-sizing: border-box;
+}
+:root{
+    // dark
+    --btn-dark-hover: #1F1F1F;
+    --background-dark:  #202020;
+    --back-item-color: #2E2E2E;
+    --item-dark: #323232;
+    --color-text: #FFFFFF;
+    // light
+    --btn-light-hover: #fafafa;
+    --background-light:  #e4e4e4;
+    --back-item-color-light: #a0a0a0;
+    --item-light: #979797;
+    --color-light: #1F1F1F;
+}
+.messege-wrapper{
+    width: 100%;
+    max-height: 100vh;
+    position: relative;
+    display: flex;
+    background: var(--btn-dark-hover);
+    flex-direction: column;
+    .messege-content{
+        display: flex;
+        position: relative;
+        width: 100%;
+        max-height: 91%;
+        padding: 25px 25px 25px 0px;
+        gap: 20px;
+        background: var(--back-item-color);
+
+        .aliert{
+            position: absolute;
+            top: 60px;
+            right: 30px;
+            padding: 10px 30px;
+            background: #FF158B;
+            border-radius: 20px;
+            z-index: 15;
+
+            p{
+                color: #FFFFFF;
+                font-family: 'Poppins';
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+        .messege__chat{
+            height: 100%;
+            width: 70%;
+            border-radius: 20px;
+            background: var(--btn-dark-hover);
+            overflow: scroll;
+            overflow-x: hidden;
+            .massage_tab{
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                padding: 15px 15px;
+                .all__massage{
+                    width: 100%;
+                    gap: 30px;
+                    .massage-chat__item{
+                        display: flex;
+                        padding: 45px 15px;
+                        align-items: center;
+                        gap: 15px;
+                        border-bottom: 1px solid var(--item-dark);
+                        .massage__img-name{
+                            display: flex;
+                            gap: 10px;
+                            color: var(--color-text);
+                            font-family: 'Poppins';
+                            cursor: pointer;
+                            img{
+                                max-width: 40px;
+                                max-height: 40px;
+                                border-radius: 50%;
+                            }
+                        }
+                        .massage-text{
+                            font-family: 'Poppins';
+                            font-size: 18px;
+                            color: var(--color-text);
+                        }
+                        .massage-time__send{
+                            margin-left: auto;
+                            font-family: "Poppins";
+                            color: var(--color-text);
+                            opacity: .7;
+                        }
+                    }
+                }
+            }
+            .massage_tab.active{
+                display: flex;
+            }
+        }
+        .messege__friends{
+            width: 30%;
+            height: 100%;
+            border-radius: 20px;
+            background: var(--btn-dark-hover);
+            overflow: scroll;
+            overflow-x: hidden;
+            .friends-item{
+                width: 100%;
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                max-height: 79px;
+                padding: 20px 20px;
+                background: var(--btn-dark-hover);
+                border-bottom: 1px solid var(--item-dark);
+                transition: .15s;
+                cursor: pointer;
+                .friends-img{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .img-wrapper{
+                        max-width: 45px;
+                        max-height: 45px;
+                        border-radius: 50%;
+                    }
+                }
+                .friends-massage{
+                    display: flex;
+                    flex-direction: column;
+                    color: var(--color-text);
+                    font-family: 'Poppins';
+                    font-size: 18px;
+                    font-weight: 300;
+                }
+                .friends-massage p:nth-child(2){
+                    opacity: .6;
+                }
+                .massage-time{
+                    margin-left: auto;
+                    color: var(--item-light);
+                    font-family: 'Poppins';
+                }
+            }
+            .friends-item.active{
+                background: var(--item-dark);
+            }
+            
+            .friends-item:hover{
+                background: var(--item-dark);
+            }
+        }
+    }
+}
+
+@media(max-width: 1101px){
+    .messege-wrapper{
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        display: flex;
+        background: var(--btn-dark-hover);
+        overflow: hidden;
+        .messege-content{
+            display: flex;
+            position: relative;
+            width: 100%;
+            padding: 25px 25px 110px 0px;
+            gap: 20px;
+            background: var(--back-item-color);
+            .messege__chat{
+                height: 100%;
+                width: 70%;
+                border-radius: 20px;
+                background: var(--btn-dark-hover);
+                overflow: scroll;
+                overflow-x: hidden;
+                .massage_tab{
+                    display: none;
+                    width: 100%;
+                    flex-direction: column;
+                    padding: 15px 15px;
+                    .all__massage{
+                        width: 100%;
+                        gap: 30px;
+                        .massage-chat__item{
+                            display: flex;
+                            padding: 45px 15px;
+                            align-items: center;
+                            gap: 15px;
+                            border-bottom: 1px solid var(--item-dark);
+                            .massage__img-name{
+                                display: flex;
+                                gap: 10px;
+                                color: var(--color-text);
+                                font-family: 'Poppins';
+                                img{
+                                    max-width: 40px;
+                                    max-height: 40px;
+                                    border-radius: 50%;
+                                }
+                            }
+                            .massage-text{
+                                font-family: 'Poppins';
+                                font-size: 18px;
+                                color: var(--color-text);
+                            }
+                            .massage-time__send{
+                                margin-left: auto;
+                                font-family: "Poppins";
+                                color: var(--color-text);
+                                opacity: .7;
+                            }
+                        }
+                    }
+                }
+                .massage_tab.active{
+                    display: flex;
+                }
+            }
+            .messege__friends{
+                width: 30%;
+                height: 100%;
+                border-radius: 20px;
+                background: var(--btn-dark-hover);
+                overflow: scroll;
+                overflow-x: hidden;
+                .friends-item{
+                    width: 100%;
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    max-height: 79px;
+                    padding: 20px 20px;
+                    background: var(--btn-dark-hover);
+                    border-bottom: 1px solid var(--item-dark);
+                    transition: .15s;
+                    cursor: pointer;
+                    .friends-img{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .img-wrapper{
+                            max-width: 45px;
+                            max-height: 45px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .friends-massage{
+                        display: flex;
+                        flex-direction: column;
+                        color: var(--color-text);
+                        font-family: 'Poppins';
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+                    .friends-massage p:nth-child(2){
+                        opacity: .6;
+                    }
+                    .massage-time{
+                        margin-left: auto;
+                        color: var(--item-light);
+                        font-family: 'Poppins';
+                    }
+                }
+                .friends-item.active{
+                    background: var(--item-dark);
+                }
+                
+                .friends-item:hover{
+                    background: var(--item-dark);
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 830px){
+    .messege-wrapper{
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        display: flex;
+        background: var(--btn-dark-hover);
+        overflow: hidden;
+        .messege-content{
+            display: flex;
+            position: relative;
+            width: 100%;
+            padding: 25px 25px 110px 0px;
+            gap: 20px;
+            background: var(--back-item-color);
+            .messege__chat{
+                height: 100%;
+                width: 70%;
+                border-radius: 20px;
+                background: var(--btn-dark-hover);
+                overflow: scroll;
+                overflow-x: hidden;
+                .massage_tab{
+                    display: none;
+                    width: 100%;
+                    flex-direction: column;
+                    padding: 15px 15px;
+                    .all__massage{
+                        width: 100%;
+                        gap: 30px;
+                        .massage-chat__item{
+                            display: flex;
+                            padding: 45px 15px;
+                            align-items: center;
+                            gap: 15px;
+                            border-bottom: 1px solid var(--item-dark);
+                            .massage__img-name{
+                                display: flex;
+                                gap: 10px;
+                                color: var(--color-text);
+                                font-family: 'Poppins';
+                                img{
+                                    max-width: 40px;
+                                    max-height: 40px;
+                                    border-radius: 50%;
+                                }
+                            }
+                            .massage-text{
+                                font-family: 'Poppins';
+                                font-size: 18px;
+                                color: var(--color-text);
+                            }
+                            .massage-time__send{
+                                margin-left: auto;
+                                font-family: "Poppins";
+                                color: var(--color-text);
+                                opacity: .7;
+                            }
+                        }
+                    }
+                }
+                .massage_tab.active{
+                    display: flex;
+                }
+            }
+            .messege__friends{
+                width: 30%;
+                height: 100%;
+                border-radius: 20px;
+                background: var(--btn-dark-hover);
+                overflow: scroll;
+                overflow-x: hidden;
+                .friends-item{
+                    width: 100%;
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    max-height: 79px;
+                    padding: 20px 20px;
+                    background: var(--btn-dark-hover);
+                    border-bottom: 1px solid var(--item-dark);
+                    transition: .15s;
+                    cursor: pointer;
+                    .friends-img{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .img-wrapper{
+                            max-width: 45px;
+                            max-height: 45px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .friends-massage{
+                        display: none;
+                        flex-direction: column;
+                        color: var(--color-text);
+                        font-family: 'Poppins';
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+                    .friends-massage p:nth-child(2){
+                        opacity: .6;
+                    }
+                    .massage-time{
+                        margin-left: auto;
+                        color: var(--item-light);
+                        font-family: 'Poppins';
+                    }
+                }
+                .friends-item.active{
+                    background: var(--item-dark);
+                }
+                
+                .friends-item:hover{
+                    background: var(--item-dark);
+                }
+            }
+        }
+    }
+}

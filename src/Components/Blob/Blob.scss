@@ -1,0 +1,21 @@
+.blob{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-width: 100vw;
+    min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: var(--btn-dark-hover);
+}
+.blob_content{
+	position: absolute;
+	width: 30%;
+	height: 30% ;
+}
+.blob_content:nth-child(2){
+	filter: blur(50px);
+}

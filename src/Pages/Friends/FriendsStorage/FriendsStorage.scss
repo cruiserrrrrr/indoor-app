@@ -1,0 +1,82 @@
+:root{
+
+    // dark
+    --btn-dark-hover: #1F1F1F;
+    --background-dark:  #202020;
+    --back-item-color: #2E2E2E;
+    --item-dark: #323232;
+    --color-text: #FFFFFF;
+    // light
+    --btn-light-hover: #fafafa;
+    --background-light:  #e4e4e4;
+    --back-item-color-light: #a0a0a0;
+    --item-light: #979797;
+    --color-light: #1F1F1F;
+}
+
+
+
+.items-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    width: 100%;
+    padding: 25px 25px;
+    padding-inline-start: 0;
+
+    .friends-item{
+        display: flex;
+        gap: 10px;
+        background: var(--back-item-color);
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: .55s;
+        .friends__img{
+            border-radius: 10px;
+            height: 60px;
+            width: 60px;
+        }
+        .item-info{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            .friends__name{
+                color: var(--color-text);
+                font-size: 14px;
+                font-weight: 500;
+                font-family: 'Poppins';
+            }
+            .friends__game{
+                color: #ffffffa2;
+                font-size: 14px;
+                font-weight: 500;
+                font-family: 'Poppins';
+            }
+        }
+    }
+    .friends-online{
+        box-shadow: 0px 2px 0px rgba($color: #4dff4d, $alpha: 1.0);
+    }
+    .friends-online:hover{
+        box-shadow: 0px 4px 0px rgba($color: #4dff4d, $alpha: 1.0);
+    }
+    .friends-offline{
+        box-shadow: 0px 2px 0px rgba($color: #686868, $alpha: 1.0);
+    }
+    .friends-offline:hover{
+        box-shadow: 0px 4px 0px rgba($color: #686868, $alpha: 1.0);
+    }
+}
+
+.friends-modal{
+    width: 95vw;
+    height: 90vh;
+
+    .friends-modal__header{
+        width: 100%;
+        padding: 15px 20px;
+    }
+}

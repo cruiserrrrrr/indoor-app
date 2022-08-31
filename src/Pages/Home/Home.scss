@@ -1,0 +1,196 @@
+:root {
+
+    // dark
+    --btn-dark-hover: #1F1F1F;
+    --background-dark: #202020;
+    --back-item-color: #2E2E2E;
+    --item-dark: #323232;
+    --color-text: #FFFFFF;
+    // light
+    --btn-light-hover: #fafafa;
+    --background-light: #e4e4e4;
+    --back-item-color-light: #a0a0a0;
+    --item-light: #979797;
+    --color-light: #1F1F1F;
+}
+
+
+.home-container {
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+
+    .home-wrapper {
+        min-width: 100%;
+        padding: 40px 40px;
+        display: flex;
+        gap: 24px;
+        height: 100%;
+
+
+        .home-shop {
+            max-width: 76%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 49px;
+
+            .home-game-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+
+        .home-social {
+            max-width: 24%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            gap: 34px;
+            height: 100%;
+
+            .close-btn__bar {
+                display: none;
+                justify-content: center;
+                align-items: center;
+                margin-left: -20px;
+                z-index: 100;
+                padding: 10px 10px;
+                border-radius: 10px;
+                background: #FF158B;
+                position: absolute;
+                left: 0;
+                bottom: 50%;
+                cursor: pointer;
+
+                .close-btn {
+                    background: transparent;
+                    padding: 10px 10px;
+                    border-left: none;
+                    border-bottom: none;
+                    border-right: 2px solid #FFFFFF;
+                    border-top: 2px solid #FFFFFF;
+                    transform: rotate(-135deg);
+                    cursor: pointer;
+
+                }
+            }
+        }
+
+        .rightbar-obtn-wrapper{
+            border: none;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            padding: 10px 10px;
+            border-radius: 10px;
+            background: #FF158B;
+            position: absolute;
+            cursor: pointer;
+            transform: .4s;
+            right: 0;
+            bottom: 45%;
+            
+
+            .rightbar-obtn {
+                background: transparent;
+                padding: 7px 7px;
+                border-left: none;
+                border-bottom: none;
+                border-right: 2px solid #FFFFFF;
+                border-top: 2px solid #FFFFFF;
+                transform: rotate(-135deg);
+                cursor: pointer;
+                transform: .4s;
+            }
+        }
+    }
+}
+
+@media (max-width: 1230px) {
+    .home-container {
+        width: 100%;
+        min-height: 100vh;
+        overflow: scroll;
+
+        .home-wrapper {
+            height: 100%;
+            width: 100%;
+            padding: 40px 40px 120px 40px;
+            display: flex;
+
+
+            .home-shop {
+                max-width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                .home-game-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                }
+            }
+
+            .home-social {
+                max-width: 24%;
+                display: none;
+                flex-direction: column;
+                gap: 34px;
+                height: 100%;
+                transition: .3s;
+
+
+            }
+            .rightbar-obtn-wrapper{
+                display: flex;
+            }
+            .active {
+                margin-right: 0%;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .home-container {
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+
+        .home-wrapper {
+            width: 100%;
+            padding: 20px 20px 120px 20px;
+            display: flex;
+            gap: 25px;
+
+            .home-shop {
+                max-width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                .home-game-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                }
+            }
+
+            .home-social {
+                max-width: 24%;
+                display: none;
+                flex-direction: column;
+                gap: 34px;
+                height: 100%;
+            }
+
+        }
+    }
+}

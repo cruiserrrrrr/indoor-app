@@ -1,0 +1,28 @@
+.friends-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    overflow: scroll;
+    position: relative;
+
+
+    .friends-container {
+        padding: 0 0 0 25px;
+        justify-content: center;
+
+
+    }
+}
+@media(max-width: 1101px){
+    .friends-wrapper {
+        width: 100%;
+        min-height: 100vh;
+        overflow: scroll;
+        position: relative;
+
+        .friends-container {
+            padding: 0 0 0 25px;
+            justify-content: center;
+            padding-bottom: 110px;
+        }
+    }
+}
