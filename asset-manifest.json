@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/indoor-app/static/css/main.1e53c7e8.css",
+    "main.js": "/indoor-app/static/js/main.6d4ded7d.js",
+    "static/js/787.545aecf5.chunk.js": "/indoor-app/static/js/787.545aecf5.chunk.js",
+    "static/media/ng-background.png": "/indoor-app/static/media/ng-background.e559f9ecef4ee3563f1b.png",
+    "static/media/ng-12.png": "/indoor-app/static/media/ng-12.5677a13f676590d71a4f.png",
+    "index.html": "/indoor-app/index.html",
+    "main.1e53c7e8.css.map": "/indoor-app/static/css/main.1e53c7e8.css.map",
+    "main.6d4ded7d.js.map": "/indoor-app/static/js/main.6d4ded7d.js.map",
+    "787.545aecf5.chunk.js.map": "/indoor-app/static/js/787.545aecf5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e53c7e8.css",
+    "static/js/main.6d4ded7d.js"
+  ]
+}
